@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SimpleQueryPage {
 	private int currentStart;
-	private boolean hasNaxtPage;
+	private boolean hasNextPage;
 	private boolean hasPrevPage;
 	private List<BookLink> books;
 	public int getCurrentStart() {
@@ -13,11 +13,11 @@ public class SimpleQueryPage {
 	public void setCurrentStart(int currentStart) {
 		this.currentStart = currentStart;
 	}
-	public boolean isHasNaxtPage() {
-		return hasNaxtPage;
+	public boolean isHasNextPage() {
+		return hasNextPage;
 	}
-	public void setHasNaxtPage(boolean hasNaxtPage) {
-		this.hasNaxtPage = hasNaxtPage;
+	public void setHasNextPage(boolean hasNaxtPage) {
+		this.hasNextPage = hasNaxtPage;
 	}
 	public boolean isHasPrevPage() {
 		return hasPrevPage;
@@ -33,7 +33,7 @@ public class SimpleQueryPage {
 	}
 	@Override
 	public String toString() {
-		return "SimpleQueryPage [currentStart=" + currentStart + ", hasNaxtPage=" + hasNaxtPage + ", hasPrevPage="
+		return "SimpleQueryPage [currentStart=" + currentStart + ", hasNaxtPage=" + hasNextPage + ", hasPrevPage="
 				+ hasPrevPage + ", books=" + books + "]";
 	}
 	
