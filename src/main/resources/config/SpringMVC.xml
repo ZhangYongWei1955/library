@@ -21,7 +21,7 @@
 	<!-- 扫描图书馆相关资源包 -->
 	<context:component-scan base-package="com.tentcoo.library.*" />
 	<!-- 扫描金蝶云之家平台相关资源包 -->
-	<context:component-scan base-package="com.tentcoo.platform.*" />
+	<context:component-scan base-package="com.tentcoo.platform" />
 	
 	<!-- 静态资源准入规则 -->
 	<mvc:resources location="/res/" mapping="/res/**" cache-period="0"/>

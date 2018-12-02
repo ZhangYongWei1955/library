@@ -25,7 +25,8 @@ public class UserController {
 	@Resource
 	BookService bookService;
 	
-	
+	@RequestMapping(value="add_to_book_list_item")
+	@ResponseBody
 	public Map<String,Object> addBookList(String code,String name,HttpServletRequest request){
 		Map<String,Object> map = new HashMap<String,Object>();
 		if(code == null || code.isEmpty()) {
